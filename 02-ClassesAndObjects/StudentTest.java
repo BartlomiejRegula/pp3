@@ -32,6 +32,7 @@ public class StudentTest {
         s4.name = "Janek";
         s4.age = 13;
         s4.displayAge();
+        s3.sayHello();
 
     }
 }
