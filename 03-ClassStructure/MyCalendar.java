@@ -16,14 +16,27 @@ public class MyCalendar {
      * Returns the number of days
      * from the beginning of year
      */
-    static String days(){
-        return null;
+    static int days(){
+        int[] monthsArr= {31,28,31,30,31,30,31,31,31,30,31,30};
+        int daysFromBeg = (month*monthsArr[month-1]) + day;
+        return daysFromBeg;
     }
     /*
      * Returns month name
      */
+    static String monthName(){
+        String[] monthNamesArr = {"Styczeń","Luty","Marzec"
+        ,"Kwiecień","Maj","Czerwiec","Lipiec",
+        "Sierpień","Wrzesień","Październik","Listopad","Grudzień"};
+        return monthNamesArr[month-1];        
+    
+    }
+
+
     public static void main(String[] args) {
         System.out.println(myDate());
+        System.out.println(days());
+        System.out.println(monthName());
     }
 }
 
