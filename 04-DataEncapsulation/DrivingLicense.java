@@ -48,6 +48,7 @@ public class DrivingLicense {
         this.licenseNumber = licenseNumber;
     }
     public void setYear(int year) {
+        if (year > 1980 && year < 2023)
         this.year = year;
     }
     public void setLicenseCategory(String licenseCategory) {

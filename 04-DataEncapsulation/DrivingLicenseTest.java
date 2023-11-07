@@ -3,7 +3,7 @@ public class DrivingLicenseTest {
         DrivingLicense d = new DrivingLicense();
         d.setDriversName("tomek");
         d.setAddres("ulica R");
-
+        d.setYear(2024);
         System.out.println(d.toString());
     }
 }
